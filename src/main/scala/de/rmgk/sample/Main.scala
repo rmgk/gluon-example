@@ -22,7 +22,11 @@ import javafx.event.ActionEvent
 import rescala.default._
 
 object Main:
-  def main(args: Array[String]): Unit = { Application.launch(classOf[Main], args: _*) }
+  def main(args: Array[String]): Unit =
+    System.setProperty("prism.forceGPU", "true")
+    System.setProperty("prism.verbose", "true")
+    Application.launch(classOf[Main], args: _*)
+
 
 class Main extends Application {
   final private val appManager = AppManager.initialize(this.postInit)
