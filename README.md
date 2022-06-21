@@ -11,6 +11,12 @@ for android you want to do:
 
 ./mvnw -Pandroid gluonfx:build gluonfx:package
 
+
+if you add code that usse any form of reflection, that will need an updated `reflect-config.json`, you can generate the config automatically by running the application with `./mvnw gluonfx:runagent` however, that will generate too much configuration and you will have to delete everything that sounds like it is related to graphics.
+
+See commit 3c57e25e2d83f5ace4d8779f055a0ba4176ebc9b for things I removed manually
+
+
 auto generated readme below with more possible options.
 
 
