@@ -1,3 +1,20 @@
+
+get the gluon graal version:
+
+https://github.com/gluonhq/graal/releases/tag/gluon-22.0.0.3-Final
+
+set JAVA_HOME to that JDK downloaded above
+
+edit pom.xml to also point to the JDK above (not sure if both are needed, but better safe than sorry)
+
+for android you want to do:
+
+./mvnw -Pandroid gluonfx:build gluonfx:package
+
+auto generated readme below with more possible options.
+
+
+
 # My Gluon Application
 
 This Gluon sample was generated from https://start.gluon.io
